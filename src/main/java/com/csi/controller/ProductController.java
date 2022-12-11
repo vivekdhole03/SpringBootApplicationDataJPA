@@ -60,7 +60,7 @@ public class ProductController {
 
     }
 
-    @PostMapping("/savedata")
+    @PostMapping("/savalldata")
 
     public ResponseEntity<Product> saveData(@RequestBody Product product) {
         return ResponseEntity.ok(productServiceImpl.saveData(product));

@@ -19,7 +19,7 @@ public class ProductController {
     @Autowired
     ProductService productServiceImpl;
 
-    @GetMapping("/getdata")
+    @GetMapping("/getalldata")
     public ResponseEntity<List<Product>> getAllData() {
         return ResponseEntity.ok(productServiceImpl.getAllData());
     }

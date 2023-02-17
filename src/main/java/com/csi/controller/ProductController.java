@@ -13,13 +13,13 @@ import java.util.Date;
 import java.util.List;
 
 @RestController
-@RequestMapping("/V1")
+@RequestMapping("/V53")
 public class ProductController {
 
     @Autowired
     ProductService productServiceImpl;
 
-    @GetMapping("/getalldata")
+    @GetMapping("/viewAllData")
     public ResponseEntity<List<Product>> getAllData() {
         return ResponseEntity.ok(productServiceImpl.getAllData());
     }

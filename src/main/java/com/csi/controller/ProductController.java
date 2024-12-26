@@ -24,8 +24,8 @@ public class ProductController {
         return ResponseEntity.ok(productServiceImpl.getAllData());
     }
 
-    @GetMapping("/getdatabyid/{productId}")
-    public java.util.Optional<Product> productgetdatabyId(@PathVariable long productId) {
+    @GetMapping("/getDataById/{productId}")
+    public java.util.Optional<Product> productGetDataById(@PathVariable long productId) {
         return productServiceImpl.getDataById(productId);
     }
 

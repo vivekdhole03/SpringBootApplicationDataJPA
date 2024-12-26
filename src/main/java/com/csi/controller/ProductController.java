@@ -3,7 +3,6 @@ package com.csi.controller;
 
 import com.csi.model.Product;
 import com.csi.service.ProductService;
-import com.csi.service.ProductServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
